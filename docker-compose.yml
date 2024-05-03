@@ -2,25 +2,25 @@
 version: "3.8"
 services:
   movies:
-    image: azaroddin/paytmmoviesrepo:latest
+    image: azaroddin/dockermovies:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
   train:
-    image: azaroddin/paytmtrainrepo:latest
+    image: azaroddin/dockertrain:latest
     ports:
       - 82:80
     deploy:
       replicas: 3
   recharge:
-    image: azaroddin/paytmdthrepo:latest
+    image: azaroddin/dockerdth:latest
     ports:
       - 83:80
     deploy:
       replicas: 3
   dth:
-    image: azaroddin/paytmrechargerepo:latest
+    image: azaroddin/dockerreacharge:latest
     ports:
       - 84:80
     deploy:
